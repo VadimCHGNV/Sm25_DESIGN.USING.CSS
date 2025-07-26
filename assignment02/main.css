@@ -1,0 +1,247 @@
+/* general styles and resets */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #b5daff;
+}
+
+/* container for makin content centered */
+.container {
+    max-width: 960px;
+     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    padding: 1.5rem 0;
+     background-color: #436c96;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.header-brand {
+    font-weight: 700;
+     font-size: 1.25rem;
+    text-decoration: none;
+     color: white;
+    margin-left: 1rem;
+}
+
+.header-nav {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.header-nav a {
+       color: rgba(247, 92, 92, 0.75);
+     text-decoration: none;
+     margin-left: 1.5rem;
+     transition: color 0.2s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: white ;
+}
+
+/* main section */
+.makaka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: #8d7cac;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.makaka h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.makaka p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.makaka .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: #6f42c1;
+    text-decoration: none;
+    border-radius: 0.5rem ;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.makaka .btn:hover {
+    background-color: #e2e6ea ;
+}
+
+/* product feature sections */
+.product-section {
+       display: flex;
+       align-items: center;
+      padding: 4rem 1rem;
+      margin-top: 2rem;
+    background-color: white ;
+      border-radius: 0.5rem;
+     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.product-section:nth-child(even) {
+    flex-direction: row-reverse;
+   
+    background-color: #e9ecef;
+}
+
+.product-content {
+      flex: 1;
+    padding: 0 2rem;
+}
+
+.product-content h2 {
+      font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.product-content p {
+     font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.product-image-placeholder {
+       flex: 1;
+       min-height: 300px;
+     background-color: #0080ff;
+    border-radius: 0.5rem;
+     display: flex;
+      justify-content: center;
+     align-items: center;
+      color: white;
+      font-size: 1.5rem;
+        text-align: center;
+}
+
+
+.footer {
+          display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    padding: 3rem 1rem;
+      margin-top: 3rem;
+     background-color: #343a40;
+        color: white;
+      border-top: 1px solirgba(5, 5, 5, 0.1,1);
+    flex-wrap: wrap;
+      }
+
+.footer-column {
+      flex: 1;
+     min-width: 150px;
+      margin: 1rem;
+    }
+
+.footer-column h5 {
+    font-size: 1.2rem;
+      margin-bottom: 1rem;
+     color: #adb5bd;
+}
+
+.footer-column ul {
+    list-style: none;
+      padding: 0;
+  }
+
+.footer-column ul li {
+     margin-bottom: 0.5rem;
+  }
+
+.footer-column ul li a {
+    color: rgba(255, 255, 255, .75);
+   
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header-nav {
+         margin-top: 1rem;
+          
+         margin-right: 0;
+        
+          flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-nav a {
+   
+        margin: 0.5rem;
+    }
+
+    .makaka h1 {
+   
+        font-size: 2.5rem;
+      }
+
+    .makaka p {
+        font-size: 1rem;
+     }
+
+    .product-section {
+        flex-direction: column;
+    }
+
+    .product-section:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .product-content {
+        padding: 0 1rem;
+     
+        margin-bottom: 2rem;
+             }
+
+    
+    .product-image-placeholder {
+        min-height: 200px;
+           }
+
+    
+    
+    
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 1rem 0;
+        width: 100%;
+      }
+}
+
